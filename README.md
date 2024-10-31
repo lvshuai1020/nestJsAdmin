@@ -1,40 +1,5 @@
 # SnowAdmin
-
-<div>
-	<p>
-    <a href="https://gitee.com/wang_fan_w/SnowAdmin" target="_blank">
-		  <img src="https://img.shields.io/badge/License-MIT-%2343aefc" alt="License">
-		</a>
-		<a href="https://gitee.com/wang_fan_w/SnowAdmin" target="_blank">
-			<img src="https://img.shields.io/badge/vue_.js-vue3_.x-%2300b42a" alt="Vue">
-		</a>
-    <a href="https://gitee.com/wang_fan_w/SnowAdmin" target="_blank">
-		  <img src="https://img.shields.io/badge/Vite-5x-%2300b42a" alt="Vite">
-		</a>
-    <a href="https://gitee.com/wang_fan_w/SnowAdmin" target="_blank">
-		  <img src="https://img.shields.io/badge/Arco_Design-2.55.0-%2300b42a" alt="Arco-Design">
-		</a>
-	</p>
-</div>
-
-### 介绍 📖
-
-SnowAdmin 是一个清新优雅、高颜值且功能强大的后台管理模板，基于最新的前端技术栈，包括 Vue3, Vite5, TypeScript, Pinia。它内置了丰富的主题配置和组件，代码规范严谨，实现了自动化的文件路由系统。SnowAdmin 为您提供了一站式的后台管理解决方案，无需额外配置，开箱即用。同样是一个快速学习前沿技术的最佳实践。
-
-### 版本 📦
-
-**预览及文档**
-
-项目预览地址：[SnowAdmin](http://101.126.93.137/#/login)
-
-项目文档地址：[SnowAdmin-开发指南](http://101.126.93.137:81/)
-
-**代码仓库**
-
-| 平台   | 仓库地址                                                 |
-| ------ | -------------------------------------------------------- |
-| GitHub | [Github 仓库](https://github.com/WANG-Fan0912/SnowAdmin) |
-| Gitee  | [Gitee 仓库](https://gitee.com/wang_fan_w/SnowAdmin)     |
+ 
 
 ### 先行预览
 
@@ -167,65 +132,4 @@ SnowAdmin
 ├─ tsconfig.json          # typescript 全局配置
 └─ vite.config.ts         # vite 全局配置文件
 ```
-
-### 浏览器支持 🌎
-
-- 本地开发推荐使用 Chrome 最新版浏览器 [Download](https://www.google.com/intl/zh-CN/chrome/)。
-- 生产环境支持现代浏览器，不再支持 IE 浏览器，更多浏览器可以查看 [Can I Use Es Module](https://caniuse.com/?search=ESModule)。
-
-| ![IE](https://i.imgtg.com/2023/04/11/8z7ot.png) | ![Edge](https://i.imgtg.com/2023/04/11/8zr3p.png) | ![Firefox](https://i.imgtg.com/2023/04/11/8zKiU.png) | ![Chrome](https://i.imgtg.com/2023/04/11/8zNrx.png) | ![Safari](https://i.imgtg.com/2023/04/11/8zeGj.png) |
-| :---------------------------------------------: | :-----------------------------------------------: | :--------------------------------------------------: | :-------------------------------------------------: | :-------------------------------------------------: |
-|                   not support                   |                  last 2 versions                  |                   last 2 versions                    |                   last 2 versions                   |                   last 2 versions                   |
-
-<!-- ### 项目后台接口 🧩
-
-建设中 -->
-
-### 鸣谢列表 🧩
-
-- [vue：https://v3.cn.vuejs.org/](https://v3.cn.vuejs.org/)
-- [axios：https://github.com/axios/axios](https://github.com/axios/axios)
-- [nprogress：https://github.com/rstacruz/nprogress](https://github.com/rstacruz/nprogress)
-- [sortablejs：https://github.com/SortableJS/Sortabl](https://github.com/SortableJS/Sortable)
-- [sass：https://github.com/sass/sass](https://github.com/sass/sass)
-- [typescript：https://github.com/microsoft/TypeScript](https://github.com/microsoft/TypeScript)
-- [vite：https://github.com/vitejs/vite](https://github.com/vitejs/vite)
-- [wangeditor：https://github.com/wangeditor-team/wangEditor](https://github.com/wangeditor-team/wangEditor)
-- [qrcodejs：https://github.com/davidshimjs/qrcodejs](https://github.com/davidshimjs/qrcodejs)
-- [print-js：https://github.com/crabbly/Print.js](https://github.com/crabbly/Print.js)
-- [eslint：https://github.com/eslint/eslint](https://github.com/eslint/eslint)
-- [prettier：https://github.com/prettier/prettier](https://github.com/prettier/prettier)
-- [arco-design：https://arco.design/
-- [](https://arco.design/)
-
-### 特别鸣谢 🎉
-
-- [vue-next-admin：http://vuenextadmin.ccfast.cc/](http://vuenextadmin.ccfast.cc/)
-- [Gi-admin：https://lin-97.github.io/gi-demo/](https://lin-97.github.io/gi-demo/#/home)
-- [Geeker-Admin：https://admin.spicyboy.cn/](https://admin.spicyboy.cn/#/home/index)
-
-感谢以上框架为本项目提供了帮助，项目中的很多设计思想值得参考和学习，再次感谢。
-
-### 支持作者 🌟
-
-如果觉得框架不错，或者已经在使用了，希望你可以去 [Github](https://github.com/WANG-Fan0912/SnowAdmin) 或者 [Gitee](https://gitee.com/wang_fan_w/SnowAdmin) 帮我点个 ⭐ Star，这将是对我极大的鼓励与支持。
-
-### 免责条款 📫
-
-您充分了解并同意，您必须为自己使用本服务及注册帐号下的一切行为负责，包括您所发表的任何内容以及由此产生的任何后果。您应对本服务中的内容自行加以判断，并自行承担因使用内容而引起的所有风险。
-
-`SnowAdmin` 对网站上所显示的信息或资料的准确性、内容、完整性、合法性、可靠性、可操作性或可用性不承担任何责任。
-
-`SnowAdmin` 二次开发使用者因为违法而触犯中华人民共和国法律的，一切后果自己负责，`SnowAdmin` 作者不承担任何责任。
-
-本声明未涉及的问题参见国家有关法律法规，当本声明与国家法律法规冲突时，以国家法律法规为准。
-
-### 学习 & 商用 🌈
-
-`SnowAdmin` 是免费和开源的，可免费用于学习、商业使用 。
-
-### 捐赠
-
-|                                      微信                                      |                                      支付宝                                      |
-| :----------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
-| ![微信](https://gitee.com/wang_fan_w/snow-image/raw/main/introduce/Wechat.jpg) | ![支付宝](https://gitee.com/wang_fan_w/snow-image/raw/main/introduce/alipay.jpg) |
+   
