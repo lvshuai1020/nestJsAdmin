@@ -38,15 +38,16 @@
 </template>
 
 <script setup lang="ts">
+import { LoginAPI } from '@/api/modules/login';
 import { Message } from "@arco-design/web-vue";
 import { useRouter } from "vue-router";
 import { useUserInfoStore } from "@/store/modules/user-info";
 
 const router = useRouter();
 const form = ref({
-  username: "admin",
-  password: "123456",
-  verifyCode: null,
+  username: "",
+  password: "",
+  verifyCode: '',
   remember: false
 });
 const rules = ref({
@@ -57,7 +58,7 @@ const rules = ref({
     },
     {
       validator: (value: string, cb: any) => {
-        if (value !== verify.value.username) {
+        if (!value) {
           cb("请输入正确的账号");
         } else {
           cb();
@@ -72,7 +73,7 @@ const rules = ref({
     },
     {
       validator: (value: string, cb: any) => {
-        if (value !== verify.value.password) {
+        if (!value) {
           cb("请输入正确的密码");
         } else {
           cb();
@@ -97,17 +98,18 @@ const rules = ref({
   ]
 });
 const verify = ref({
-  username: "admin",
-  password: "123456",
+  username: "",
+  password: "",
   verifyCode: ""
 });
 const verifyCodeChange = (code: string) => (verify.value.verifyCode = code);
 
 const onSubmit = async ({ errors }: any) => {
+
   if (errors) return;
   // 你的登录请求
   // ......
-
+  let res = await LoginAPI(form.value); 
   // 登录成功-存储用户信息
   let stores = useUserInfoStore();
   let account = {
@@ -115,7 +117,7 @@ const onSubmit = async ({ errors }: any) => {
     roles: ["admin"] // 角色权限
   };
   stores.setAccount(account); // 存储用户信息
-  stores.setToken("Your-Token");
+  stores.setToken(res.data.access_token);
   Message.success("登录成功");
   router.replace("/home");
 };
@@ -124,17 +126,20 @@ const onSubmit = async ({ errors }: any) => {
 <style lang="scss" scoped>
 .login_form_box {
   margin-top: 28px;
+
   .verifyCode {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .remember {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .forgot-password {
       color: $color-primary;
       cursor: pointer;

@@ -17,6 +17,8 @@ export default defineConfig(({ mode }) => {
   const root = process.cwd();
   // 获取跟路径对应的文件
   const env = loadEnv(mode, root);
+
+  console.log('----', env.VITE_APP_BASE_URL)
   return {
     // 生产环境服务的公共基础路径-用于生出环境的代理的路径
     base: env.VITE_PUBLIC_PATH,
