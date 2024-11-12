@@ -2,9 +2,12 @@ import axios from "axios";
 import router from "@/router";
 import { Message } from "@arco-design/web-vue";
 // 创建axios实例
-console.log("-----");
 const service = axios.create({
-  baseURL: "/api"
+  baseURL: "/api",
+  headers: {
+    "Content-Type": "application/json",
+    "Cache-Control": "no"
+  }
 });
 // 请求拦截器
 service.interceptors.request.use(
@@ -30,7 +33,6 @@ service.interceptors.request.use(
 // 响应拦截器
 service.interceptors.response.use(
   function (response: any) {
-    console.log("----res", response);
     if (response.status != 200) {
       Message.error("服务器异常，请联系管理员");
       return Promise.reject(response.data);
@@ -51,7 +53,7 @@ service.interceptors.response.use(
       return Promise.resolve(res);
     }
   },
-  function (error: any) { 
+  function (error: any) {
     Message.error(error.response.data.msg);
     localStorage.removeItem("user-info");
     router.push("/login");

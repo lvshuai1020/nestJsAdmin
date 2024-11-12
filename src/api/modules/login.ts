@@ -1,10 +1,11 @@
-import axios from "@/api";
-
+import http from "../https";
 // 登录
 export const LoginAPI = (data: any) => {
-  return axios({
-    url: "login",
-    method: "post",
-    data
-  });
+  return http.post("login", data); 
+};
+
+// system - management
+
+export const Userlist = params => {
+  return http.get("/user/list", params); 
 };

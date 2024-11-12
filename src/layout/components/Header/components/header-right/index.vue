@@ -2,7 +2,7 @@
   <div>
     <div class="header_setting">
       <!-- 国际化 -->
-      <a-dropdown trigger="hover" @select="onLange">
+      <!-- <a-dropdown trigger="hover" @select="onLange">
         <a-button size="mini" type="text" class="icon_btn" id="system-language">
           <template #icon>
             <icon-language :size="18" />
@@ -12,16 +12,16 @@
           <a-doption :disabled="language === 'zh-CN'">{{ $t(`language.zh-CN`) }}</a-doption>
           <a-doption :disabled="language === 'en-US'">{{ $t(`language.en-US`) }}</a-doption>
         </template>
-      </a-dropdown>
+      </a-dropdown> -->
       <!-- 切换黑夜模式 -->
-      <a-tooltip :content="$t(`language.${!darkMode ? 'switch-to-night-mode' : 'switch-to-daytime-mode'}`)">
+      <!-- <a-tooltip :content="$t(`language.${!darkMode ? 'switch-to-night-mode' : 'switch-to-daytime-mode'}`)">
         <a-button size="mini" type="text" class="icon_btn" id="system-dark" @click="onNightMode">
           <template #icon>
             <icon-sun-fill :size="18" v-if="!darkMode" />
             <icon-moon-fill :size="18" v-else />
           </template>
         </a-button>
-      </a-tooltip>
+      </a-tooltip> -->
       <!-- 通知 -->
       <a-popover position="bottom" trigger="click">
         <a-button size="mini" type="text" class="icon_btn notice" id="system-notice">
@@ -32,30 +32,30 @@
         <template #content><Notice /></template>
       </a-popover>
       <!-- 全屏 -->
-      <a-tooltip :content="$t(`language.${fullScreen ? 'full-screen' : 'exit-full-screen'}`)">
+      <!-- <a-tooltip :content="$t(`language.${fullScreen ? 'full-screen' : 'exit-full-screen'}`)">
         <a-button size="mini" type="text" class="icon_btn" id="system-fullscreen" @click="onFullScreen">
           <template #icon>
             <icon-fullscreen :size="18" v-if="fullScreen" />
             <icon-fullscreen-exit :size="18" v-else />
           </template>
         </a-button>
-      </a-tooltip>
+      </a-tooltip> -->
       <!-- 系统设置 -->
-      <a-tooltip :content="$t(`language.system-settings`)">
+      <!-- <a-tooltip :content="$t(`language.system-settings`)">
         <a-button size="mini" type="text" class="icon_btn" id="system-settings" @click="onSystemSetting">
           <template #icon>
             <icon-settings :size="18" />
           </template>
         </a-button>
-      </a-tooltip>
+      </a-tooltip> -->
       <!-- 主题设置 -->
-      <a-tooltip :content="$t(`language.theme-settings`)">
+      <!-- <a-tooltip :content="$t(`language.theme-settings`)">
         <a-button size="mini" type="text" class="icon_btn" id="system-theme" @click="onThemeSetting">
           <template #icon>
             <icon-skin :size="18" />
           </template>
         </a-button>
-      </a-tooltip>
+      </a-tooltip> -->
       <!-- 我的 -->
       <a-dropdown trigger="hover">
         <div class="my_setting" id="system-my-setting">

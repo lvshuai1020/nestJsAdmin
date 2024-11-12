@@ -54,42 +54,42 @@ export const dynamicRoutes: RouteRecordRaw[] = [
           sort: 1
         }
       },
-      {
-        path: "/file-management",
-        name: "file-management",
-        redirect: "/file-management/document-library",
-        meta: {
-          title: "file-management",
-          hide: false,
-          disable: false,
-          keepAlive: true,
-          affix: false,
-          link: "",
-          iframe: false,
-          roles: ["admin"],
-          svgIcon: "folder-menu",
-          sort: 2
-        },
-        children: [
-          {
-            path: "/file-management/document-library",
-            name: "document-library",
-            component: () => import("@/views/file-management/document-library/document-library.vue"),
-            meta: {
-              title: "document-library",
-              hide: false,
-              disable: false,
-              keepAlive: true,
-              affix: false,
-              link: "",
-              iframe: false,
-              roles: ["admin"],
-              icon: "icon-menu",
-              sort: 1
-            }
-          }
-        ]
-      },
+      // {
+      //   path: "/file-management",
+      //   name: "file-management",
+      //   redirect: "/file-management/document-library",
+      //   meta: {
+      //     title: "file-management",
+      //     hide: false,
+      //     disable: false,
+      //     keepAlive: true,
+      //     affix: false,
+      //     link: "",
+      //     iframe: false,
+      //     roles: ["admin"],
+      //     svgIcon: "folder-menu",
+      //     sort: 2
+      //   },
+      //   children: [
+      //     {
+      //       path: "/file-management/document-library",
+      //       name: "document-library",
+      //       component: () => import("@/views/file-management/document-library/document-library.vue"),
+      //       meta: {
+      //         title: "document-library",
+      //         hide: false,
+      //         disable: false,
+      //         keepAlive: true,
+      //         affix: false,
+      //         link: "",
+      //         iframe: false,
+      //         roles: ["admin"],
+      //         icon: "icon-menu",
+      //         sort: 1
+      //       }
+      //     }
+      //   ]
+      // },
       {
         path: "/table-management",
         name: "table-management",
@@ -124,23 +124,23 @@ export const dynamicRoutes: RouteRecordRaw[] = [
               sort: 1
             }
           },
-          {
-            path: "/table-management/custom-table",
-            name: "custom-table",
-            component: () => import("@/views/table-management/custom-table/custom-table.vue"),
-            meta: {
-              title: "custom-table",
-              hide: false,
-              disable: false,
-              keepAlive: true,
-              affix: false,
-              link: "",
-              iframe: false,
-              roles: ["admin"],
-              icon: "icon-menu",
-              sort: 2
-            }
-          }
+          // {
+          //   path: "/table-management/custom-table",
+          //   name: "custom-table",
+          //   component: () => import("@/views/table-management/custom-table/custom-table.vue"),
+          //   meta: {
+          //     title: "custom-table",
+          //     hide: false,
+          //     disable: false,
+          //     keepAlive: true,
+          //     affix: false,
+          //     link: "",
+          //     iframe: false,
+          //     roles: ["admin"],
+          //     icon: "icon-menu",
+          //     sort: 2
+          //   }
+          // }
         ]
       },
       {
