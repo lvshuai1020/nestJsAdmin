@@ -33,12 +33,10 @@ service.interceptors.request.use(
 // 响应拦截器
 service.interceptors.response.use(
   function (response: any) {
-    if (response.status != 200) {
-      Message.error("服务器异常，请联系管理员");
-      return Promise.reject(response.data);
-    }
+
     let res = response.data;
     if (res.code == 401) {
+      console.log("---- error");
       Message.error("登录状态已过期");
       router.push("/login");
       return Promise.reject(res);
@@ -54,6 +52,7 @@ service.interceptors.response.use(
     }
   },
   function (error: any) {
+    console.log("---- error");
     Message.error(error.response.data.msg);
     localStorage.removeItem("user-info");
     router.push("/login");
